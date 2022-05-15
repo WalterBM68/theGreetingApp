@@ -21,8 +21,12 @@ function theName(){
     const radioBtnValue = document.querySelector("input[name='radioBtn']:checked").value;
     theGreetFunction.setName(theText.value.toLowerCase());
     
-    if (!theGreetFunction.getName()) {
+    if (!theGreetFunction.getName('')) {
         alert("You didn't entered the name!");
+        return;
+    }
+    if(!theGreetFunction.getName(Number())){
+        alert("Please enter the name not the number!");
         return;
     }
     if (!localStorage.getItem(theGreetFunction.getName())) {
