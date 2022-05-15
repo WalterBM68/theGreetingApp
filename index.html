@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="greet.css">
+    <title>Greeting function</title>
+</head>
+
+<body>
+    <div class="greetings">
+        <h2>Greeting</h2>
+        <form action="">
+            <div class="textbox">
+                <input class="name-text" value="" type="text" placeholder="Enter your name">
+                <span class="numberOfGreetings">0</span>
+            </div>
+            <label for="">
+                <input type="radio" name="radioBtn" class="theRadioBtn" value="english">
+                <span class="label-body">English</span>
+            </label>
+            <label for="">
+                <input type="radio" name="radioBtn" class="theRadioBtn" value="zulu">
+                <span class="label-body">IsiZulu</span>
+            </label>
+            <label for="">
+                <input type="radio" name="radioBtn" class="theRadioBtn" value="sotho">
+                <span class="label-body">SeSotho</span>
+            </label>
+            <label for="">
+                <input type="radio" name="radioBtn" class="theRadioBtn" value="pedi">
+                <span class="label-body">Sepedi</span>
+            </label>
+            <label for="">
+                <input type="radio" name="radioBtn" class="theRadioBtn" value="venda">
+                <span class="label-body">Tshivenda</span>
+            </label>
+            <div class="text-answer">
+                <textarea class="answer" value="" type="text"> </textarea>
+            </div>
+            <div class="buttons">
+                <button class="greet" type="button" name="greet-button">Greet</button>
+                <button class="reset" type="button" name="reset-button">Reset</button>
+            </div>
+            
+        </form>
+    </div> 
+    <script src="greetFactoryFunc.js"></script>
+    <script src="greet.js"></script>
+</body>
+
+</html>
