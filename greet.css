@@ -3,10 +3,10 @@ body{
 }
 .greetings{
     border: 6px solid #E74C3C;
-    width: 30%;
     margin: auto;
     padding: 1rem;
     font-size: 18px;
+    background-color: #777;
 }
 form{
     display: flex;
@@ -16,18 +16,15 @@ h2{
     text-align: center;
 }
 .greet{
-    width: 18%;
     height: 50px;
-    margin-left: 25px;
     background-color: darkolivegreen;
     float: left;
     font-size: 20px;
     cursor: pointer;
 }
 .reset{
-    width: 18%;
     height: 50px;
-    margin-right: 244px;
+    margin-right: 175px;
     background-color: darkolivegreen;
     float: right;
     font-size: 20px;
@@ -46,7 +43,7 @@ h2{
     height: 180px;
     float: right;
     margin-right: 2px;
-    margin-top: -34%;
+    margin-top: -48%;
     border:  2px solid #2980B9;
     font-size: 16px;
     margin-bottom: -5%;
@@ -54,4 +51,41 @@ h2{
 .numberOfGreetings{
     margin-left: 12px;
     font-size: 25px;
+}
+
+@media only screen and (min-Width: 720px){
+    .greetings{
+        border: 6px solid #E74C3C;
+        width: 30%;
+        margin: auto;
+        padding: 1rem;
+        font-size: 18px;
+        background-color: #777;
+    }
+    .answer{
+        width: 43%;
+        height: 180px;
+        float: right;
+        margin-right: 2px;
+        margin-top: -34%;
+        border:  2px solid #2980B9;
+        font-size: 16px;
+        margin-bottom: -5%;
+    }
+    .greet{
+        margin-left: 79px;
+        height: 50px;
+        background-color: darkolivegreen;
+        float: left;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .reset{
+        height: 50px;
+        margin-right: 230px;
+        background-color: darkolivegreen;
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
 }
