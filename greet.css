@@ -1,12 +1,20 @@
 body{
     font-family: sans-serif;
 }
+.name-validate{
+    margin-top: -7%;
+    margin-bottom: -1px;
+    font-size: 22px;
+    color: red;
+    visibility: hidden;
+}
+
 .greetings{
     border: 6px solid #E74C3C;
     margin: auto;
     padding: 1rem;
     font-size: 18px;
-    background-color: #777;
+    background-color: beige;
 }
 form{
     display: flex;
@@ -17,7 +25,7 @@ h2{
 }
 .greet{
     height: 50px;
-    background-color: darkolivegreen;
+    background-color: grey;
     float: left;
     font-size: 20px;
     cursor: pointer;
@@ -25,7 +33,7 @@ h2{
 .reset{
     height: 50px;
     margin-right: 175px;
-    background-color: darkolivegreen;
+    background-color: grey;
     float: right;
     font-size: 20px;
     cursor: pointer;
@@ -53,37 +61,185 @@ h2{
     font-size: 25px;
 }
 
-@media only screen and (min-Width: 720px){
+@media only screen and (min-Width: 540px){
+    .answer{
+        margin-top: -32%;
+    }
+    .greet{
+        margin-left: 5px;
+    }
+    .reset{
+        margin-right: 330px;
+    }
+}
+
+@media only screen and (min-Width: 412px){
+    .greetings{
+        border: 6px solid #E74C3C;
+        margin: auto;
+        padding: 1rem;
+        font-size: 20px;
+        background-color: beige;
+    }
+    .answer{
+        margin-top: -45%;
+    }
+    .greet{
+        margin-left: 5px;
+    }
+    .reset{
+        margin-right: 200px;
+        height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-Width: 768px){
     .greetings{
         border: 6px solid #E74C3C;
         width: 30%;
         margin: auto;
         padding: 1rem;
         font-size: 18px;
-        background-color: #777;
+        background-color: beige;
     }
     .answer{
-        width: 43%;
-        height: 180px;
+        width: 38%;
+        height: 167px;
         float: right;
         margin-right: 2px;
-        margin-top: -34%;
+        margin-top: -65%;
         border:  2px solid #2980B9;
         font-size: 16px;
         margin-bottom: -5%;
     }
     .greet{
-        margin-left: 79px;
         height: 50px;
-        background-color: darkolivegreen;
+        background-color: grey;
+        float: left;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    .reset{
+        height: 50px;
+        margin-right: 100px;
+        background-color: grey;
+        float: right;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-Width: 912px){
+    .greetings{
+        font-size: 20px;
+    }
+    .answer{
+        margin-top: -60%;
+    }
+    .greet{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .reset{
+        margin-right: 120px;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-Width: 1024px){
+    .answer{
+        width: 43%;
+        height: 180px;
+        float: right;
+        margin-right: 2px;
+        margin-top: -54%;
+        border:  2px solid #2980B9;
+        font-size: 16px;
+        margin-bottom: -5%;
+    }
+    .greet{
+        margin-left: 1px;
+        height: 50px;
+        background-color: grey;
         float: left;
         font-size: 20px;
         cursor: pointer;
     }
     .reset{
         height: 50px;
-        margin-right: 230px;
-        background-color: darkolivegreen;
+        margin-right: 160px;
+        background-color: grey;
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-Width: 1280px){
+    .greetings{
+        border: 6px solid #E74C3C;
+        margin: auto;
+        padding: 1rem;
+        font-size: 25px;
+        background-color: beige;
+    }
+    .answer{
+        width: 41%;
+        height: 180px;
+        float: right;
+        margin-right: 2px;
+        margin-top: -53%;
+        border:  2px solid #2980B9;
+        font-size: 24px;
+        margin-bottom: -5%;
+    }
+    .name-text{
+        width: 45%;
+        height: 40px;
+        border:  2px solid #2980B9;
+        float: left;
+        font-size: 16px;
+        margin: 0px 0px 10px 0px;
+    } 
+    .greet{
+        margin-left: 1px;
+        height: 50px;
+        background-color: grey;
+        float: left;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .reset{
+        height: 50px;
+        margin-right: 225px;
+        background-color: grey;
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-Width: 1320px){
+    .answer{
+        width: 43%;
+        height: 180px;
+        float: right;
+        margin-right: 2px;
+        margin-top: -44%;
+        border:  2px solid #2980B9;
+        font-size: 24px;
+    }
+    .greet{
+        margin: 8px 0px 0px 0px;
+        margin-left: 27px;
+        height: 50px;
+        background-color: grey;
+        float: left;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .reset{
+        margin: 8px 0px 0px 0px;
+        height: 50px;
+        margin-right: 280px;
+        background-color: grey;
         float: right;
         font-size: 20px;
         cursor: pointer;
