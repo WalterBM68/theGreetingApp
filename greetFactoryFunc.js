@@ -28,6 +28,10 @@ function greetingsFunction(){
         return 'Please select the language';
     }
     
+    function messageAfterTheResetBtnClicked(){
+        return 'You have deleted all the names';
+    }
+
     const languages = () => {
         return {
             Tshivenda: `Ndi matsheloni ${getName()}`,
@@ -45,6 +49,7 @@ function greetingsFunction(){
         checkingTheName,
         checkingTheNumber,
         greetingUserForSecondTime,
-        selectingTheLanguage
+        selectingTheLanguage,
+        messageAfterTheResetBtnClicked
     }
 }

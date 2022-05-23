@@ -55,7 +55,8 @@ function reset() {
     greetings.innerHTML = Object.keys(localStorage).length;
     theOutput.innerHTML = "";
     theText.value = '';
-    document.getElementById('validate').style.visibility = 'hidden';
+    document.getElementById('validate').innerHTML = theGreetFunction.messageAfterTheResetBtnClicked();
+    document.getElementById('validate').style.visibility = 'visible';
 }
 
 theGreetBtn.addEventListener("click", greetingTheUser);
