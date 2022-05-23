@@ -21,7 +21,7 @@ function greetingsFunction(){
 
     function greetingUserForSecondTime(){
         if(getName() === getName())
-            return "This name has been greeted before"
+            return "This name has been greeted"
     }
 
     function selectingTheLanguage(){
@@ -34,11 +34,11 @@ function greetingsFunction(){
 
     const languages = () => {
         return {
-            Tshivenda: `Ndi matsheloni ${getName()}`,
-            English: `Hello ${getName()}`,
-            IsiZulu: `Sawubona ${getName()}`,
-            Sepedi: `Thobela ${getName()}`,
-            SeSotho: `Dumelang ${getName()}`,
+            Tshivenda: `${getName()}`,
+            English: `${getName()}`,
+            IsiZulu: `${getName()}`,
+            Sepedi: `${getName()}`,
+            SeSotho: `${getName()}`,
         }
     };
 
