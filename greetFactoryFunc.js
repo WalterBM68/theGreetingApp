@@ -34,11 +34,11 @@ function greetingsFunction(){
 
     const languages = () => {
         return {
-            Tshivenda: `${getName()}`,
-            English: `${getName()}`,
-            IsiZulu: `${getName()}`,
-            Sepedi: `${getName()}`,
-            SeSotho: `${getName()}`,
+            Tshivenda: `Ndi matsheloni ${getName()}`,
+            English: `Hello ${getName()}`,
+            IsiZulu: `Sawubona ${getName()}`,
+            Sepedi: `Thobela ${getName()}`,
+            SeSotho: `Dumelang ${getName()}`,
         }
     };
 

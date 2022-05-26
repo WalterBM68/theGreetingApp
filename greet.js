@@ -8,24 +8,28 @@ const greetings = document.querySelector(".numberOfGreetings");
 
 let greetingInDifferentLangages = [];
 
+function showingTheRedMessage(){
+    document.getElementById("validate").style.visibility = "visible";
+}
+
 function greetingTheUser(){
     const radioBtnValue = document.querySelector("input[name='radioBtn']:checked");
     theGreetFunction.setName(theText.value.toLowerCase());
 
     if(!radioBtnValue){
         document.getElementById('validate').innerHTML = theGreetFunction.selectingTheLanguage();
-        document.getElementById('validate').style.visibility = 'visible';
+        showingTheRedMessage();
     }
 
     if(theGreetFunction.checkingTheName() !== undefined){
         document.getElementById('validate').innerHTML = theGreetFunction.checkingTheName();
-        document.getElementById('validate').style.visibility = 'visible';
+        showingTheRedMessage();
         return;
     }
 
     if(theGreetFunction.checkingTheNumber() !== undefined){
         document.getElementById('validate').innerHTML = theGreetFunction.checkingTheNumber();
-        document.getElementById('validate').style.visibility = 'visible';
+        showingTheRedMessage();
         return;
     }
 
@@ -39,15 +43,17 @@ function greetingTheUser(){
         document.getElementById('validate').style.visibility = 'hidden';
     }else{
         document.getElementById('validate').innerHTML = theGreetFunction.greetingUserForSecondTime();
-        document.getElementById('validate').style.visibility = 'visible';
+        showingTheRedMessage();
     }
 
     localStorage.setItem(theGreetFunction.getName(), theGreetFunction.getName());
     greetings.innerHTML = Object.keys(localStorage).length -1;
-    const theStorage = localStorage.getItem('name').split(',').join('\n');
-    theOutput.innerHTML = theStorage;
+    theOutput.innerHTML = localStorage.getItem('name');
+    greetingInDifferentLangages = [];
     theText.value = '';
 }
+greetings.innerHTML = Object.keys(localStorage).length -1;
+theOutput.innerHTML = localStorage.getItem('name');
 
 function reset() {
     greetingInDifferentLangages = [];
@@ -56,7 +62,7 @@ function reset() {
     theOutput.innerHTML = "";
     theText.value = '';
     document.getElementById('validate').innerHTML = theGreetFunction.messageAfterTheResetBtnClicked();
-    document.getElementById('validate').style.visibility = 'visible';
+    showingTheRedMessage();
 }
 
 theGreetBtn.addEventListener("click", greetingTheUser);
